@@ -11,7 +11,7 @@ class ViewNavbar: UIView {
 
     private let btnExit: UIButton = {
         let button = UIButton()
-        button.setTitle("Exit", for: .normal)
+        button.setTitle("<", for: .normal)
         button.setTitleColor(.black, for: .normal)
         button.backgroundColor = .white
         button.titleLabel?.sizeToFit()
@@ -21,8 +21,7 @@ class ViewNavbar: UIView {
     private let lblName: UILabel = {
         let label = UILabel()
         label.backgroundColor = UIColor(white: 1, alpha: 0.001)
-        label.font = UIFont(name: "Roboto-Regular", size: 14)
-        label.textAlignment = .center
+        label.font = UIFont(name: "Roboto-Bold", size: 14)
         label.numberOfLines = 0
         label.textColor = .black
         label.sizeToFit()
