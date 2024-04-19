@@ -60,4 +60,17 @@ extension UIViewController {
         }
         
     }
+    
+    func askReload(yesAnswer: @escaping (() -> Void), noAnswer: @escaping (() -> Void)) {
+        let alert = UIAlertController(title: "Error", message: "Want reload?", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { _ in
+            yesAnswer()
+        }))
+        alert.addAction(UIAlertAction(title: "No", style: .default, handler: { _ in
+            noAnswer()
+        }))
+        self.navigationController?.present(alert, animated: true)
+        
+    }
 }

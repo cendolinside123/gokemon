@@ -79,6 +79,10 @@ extension HomeViewController: ListLoadDelegate {
     
     func onError(error: Error) {
         self.showToast(message: error.localizedDescription, font: UIFont.systemFont(ofSize: 14))
+        self.askReload(yesAnswer: { [weak self] in
+            self?.viewModel.loadListGokemon(fistLoad: false)
+        }, noAnswer: {
+        })
     }
     
     func onLoading() {

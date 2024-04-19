@@ -103,7 +103,7 @@ class DetailViewController: UIViewController {
         constraints += NSLayoutConstraint.constraints(withVisualFormat: h_stackViewContent, options: .alignAllTop, metrics: nil, views: views)
         
         navBar.translatesAutoresizingMaskIntoConstraints = false
-        constraints += [NSLayoutConstraint(item: navBar, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 30)]
+        constraints += [NSLayoutConstraint(item: navBar, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 50)]
         
         NSLayoutConstraint.activate(constraints)
     }
@@ -134,6 +134,13 @@ extension DetailViewController: GokemonDetailDelegate {
     
     func onError(error: Error) {
         self.showToast(message: error.localizedDescription, font: UIFont.systemFont(ofSize: 14))
+        self.askReload(yesAnswer: { [weak self] in
+            if let gokemon = self?.gokemon {
+                self?.viewModelDetail.loadGokemonDetail(url: gokemon.url, name: gokemon.name)
+            }
+        }, noAnswer: { [weak self] in
+            self?.navigationController?.popViewController(animated: true)
+        })
     }
     
     
