@@ -1,0 +1,1122 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		723B33622BCE5315000B8422 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B33612BCE5315000B8422 /* AppDelegate.swift */; };
+		723B33662BCE5315000B8422 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B33652BCE5315000B8422 /* ViewController.swift */; };
+		723B33692BCE5315000B8422 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723B33672BCE5315000B8422 /* Main.storyboard */; };
+		723B336B2BCE5316000B8422 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723B336A2BCE5316000B8422 /* Assets.xcassets */; };
+		723B336E2BCE5316000B8422 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723B336C2BCE5316000B8422 /* LaunchScreen.storyboard */; };
+		723B337E2BCE60AE000B8422 /* UIViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B337D2BCE60AE000B8422 /* UIViewController+extensions.swift */; };
+		723B33802BCE706C000B8422 /* GokemonUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B337F2BCE706C000B8422 /* GokemonUseCase.swift */; };
+		723B33832BCE707F000B8422 /* GokemonUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B33822BCE707F000B8422 /* GokemonUseCaseImpl.swift */; };
+		723B33862BCE7205000B8422 /* GokemonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B33852BCE7205000B8422 /* GokemonResponse.swift */; };
+		723B33882BCE7210000B8422 /* GokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B33872BCE7210000B8422 /* GokemonModel.swift */; };
+		723B338B2BCE7A12000B8422 /* AuthUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B338A2BCE7A12000B8422 /* AuthUseCase.swift */; };
+		723B33912BCE7B31000B8422 /* Gokemon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 723B338F2BCE7B31000B8422 /* Gokemon.xcdatamodeld */; };
+		723B33942BCE7D63000B8422 /* GokemonLocal+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B33932BCE7D63000B8422 /* GokemonLocal+extensions.swift */; };
+		723B33962BCE800D000B8422 /* GokemonLocalUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B33952BCE800D000B8422 /* GokemonLocalUseCase.swift */; };
+		723B33982BCE801D000B8422 /* GokemonLocalUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B33972BCE801D000B8422 /* GokemonLocalUseCaseImpl.swift */; };
+		723B339A2BCE81D9000B8422 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B33992BCE81D9000B8422 /* CoreDataStack.swift */; };
+		72400906465831F821A7610B /* Pods_Gokemon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DB915C01C058F3A0F446BD /* Pods_Gokemon.framework */; };
+		7258DE4E2BCF740500A61C85 /* GokemonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258DE4D2BCF740500A61C85 /* GokemonCollectionViewCell.swift */; };
+		7258DE512BCF868100A61C85 /* GokemonDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258DE502BCF868100A61C85 /* GokemonDetailModel.swift */; };
+		7258DE552BCFAC7D00A61C85 /* GokemonChainEvoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258DE542BCFAC7D00A61C85 /* GokemonChainEvoModel.swift */; };
+		7258DE572BCFACD500A61C85 /* GokemonSpeciesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258DE562BCFACD500A61C85 /* GokemonSpeciesModel.swift */; };
+		7258DE592BCFADFA00A61C85 /* FlavorTextEntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258DE582BCFADFA00A61C85 /* FlavorTextEntryModel.swift */; };
+		7258DE5B2BCFAE1B00A61C85 /* EvolutionChainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258DE5A2BCFAE1B00A61C85 /* EvolutionChainModel.swift */; };
+		7258DE5D2BCFAE3700A61C85 /* PrevEvoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258DE5C2BCFAE3700A61C85 /* PrevEvoModel.swift */; };
+		7258DE5F2BCFAE4900A61C85 /* FormDescriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258DE5E2BCFAE4900A61C85 /* FormDescriptionModel.swift */; };
+		7258DE612BCFAFA300A61C85 /* ChainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258DE602BCFAFA300A61C85 /* ChainModel.swift */; };
+		7258DE632BCFAFD100A61C85 /* EvolutionDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258DE622BCFAFD100A61C85 /* EvolutionDetailModel.swift */; };
+		7258DE732BCFB1D900A61C85 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7258DE662BCFB1D900A61C85 /* Roboto-Medium.ttf */; };
+		7258DE742BCFB1D900A61C85 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7258DE672BCFB1D900A61C85 /* Roboto-Light.ttf */; };
+		7258DE752BCFB1D900A61C85 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7258DE682BCFB1D900A61C85 /* Roboto-Regular.ttf */; };
+		7258DE762BCFB1D900A61C85 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7258DE692BCFB1D900A61C85 /* Roboto-MediumItalic.ttf */; };
+		7258DE772BCFB1D900A61C85 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7258DE6A2BCFB1D900A61C85 /* Roboto-ThinItalic.ttf */; };
+		7258DE782BCFB1D900A61C85 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7258DE6B2BCFB1D900A61C85 /* Roboto-BoldItalic.ttf */; };
+		7258DE792BCFB1D900A61C85 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7258DE6C2BCFB1D900A61C85 /* Roboto-LightItalic.ttf */; };
+		7258DE7A2BCFB1D900A61C85 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7258DE6D2BCFB1D900A61C85 /* Roboto-Italic.ttf */; };
+		7258DE7B2BCFB1D900A61C85 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7258DE6E2BCFB1D900A61C85 /* LICENSE.txt */; };
+		7258DE7C2BCFB1D900A61C85 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7258DE6F2BCFB1D900A61C85 /* Roboto-BlackItalic.ttf */; };
+		7258DE7D2BCFB1D900A61C85 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7258DE702BCFB1D900A61C85 /* Roboto-Bold.ttf */; };
+		7258DE7E2BCFB1D900A61C85 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7258DE712BCFB1D900A61C85 /* Roboto-Thin.ttf */; };
+		7258DE7F2BCFB1D900A61C85 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7258DE722BCFB1D900A61C85 /* Roboto-Black.ttf */; };
+		7258DE822BCFBB8800A61C85 /* ViewNavbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258DE812BCFBB8800A61C85 /* ViewNavbar.swift */; };
+		7258DE852BCFBC0F00A61C85 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258DE842BCFBC0F00A61C85 /* LoginViewController.swift */; };
+		7258DE882BCFBC1D00A61C85 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258DE872BCFBC1D00A61C85 /* HomeViewController.swift */; };
+		7258DE8B2BCFBC3800A61C85 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258DE8A2BCFBC3800A61C85 /* DetailViewController.swift */; };
+		7258DE8E2BCFC34700A61C85 /* ListLoadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258DE8D2BCFC34700A61C85 /* ListLoadViewModel.swift */; };
+		7258DE902BCFC34F00A61C85 /* ListLoadViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258DE8F2BCFC34F00A61C85 /* ListLoadViewModelImpl.swift */; };
+		7258DE952BCFC4EA00A61C85 /* ServiceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258DE922BCFC4EA00A61C85 /* ServiceContainer.swift */; };
+		7258DE962BCFC4EA00A61C85 /* DIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258DE932BCFC4EA00A61C85 /* DIConstant.swift */; };
+		7258DE972BCFC4EA00A61C85 /* DIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258DE942BCFC4EA00A61C85 /* DIService.swift */; };
+		726304972BD1A0400084101F /* BasicInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726304962BD1A0400084101F /* BasicInfoCollectionViewCell.swift */; };
+		7263049A2BD1AA840084101F /* StatInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726304992BD1AA840084101F /* StatInfoCollectionViewCell.swift */; };
+		7263049C2BD1AC5A0084101F /* StatLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7263049B2BD1AC5A0084101F /* StatLabel.swift */; };
+		7263049F2BD212690084101F /* EvolveInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7263049E2BD212690084101F /* EvolveInfoCollectionViewCell.swift */; };
+		726304A22BD22AB40084101F /* KeteranganCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726304A12BD22AB40084101F /* KeteranganCollectionViewCell.swift */; };
+		726304A72BD22DAA0084101F /* StatItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726304A62BD22DAA0084101F /* StatItemCollectionViewCell.swift */; };
+		726304A92BD236BF0084101F /* ItemEvoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726304A82BD236BF0084101F /* ItemEvoModel.swift */; };
+		728C65322BD0F2FC00E11CBC /* GokemonDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728C65312BD0F2FC00E11CBC /* GokemonDetailTests.swift */; };
+		728C65352BD0F4B100E11CBC /* GokemonDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728C65342BD0F4B100E11CBC /* GokemonDetailViewModel.swift */; };
+		728C65372BD0F4B900E11CBC /* GokemonDetailViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728C65362BD0F4B900E11CBC /* GokemonDetailViewModelImpl.swift */; };
+		728C653A2BD0F9E900E11CBC /* GokemonInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728C65392BD0F9E900E11CBC /* GokemonInfoModel.swift */; };
+		728C653D2BD1181F00E11CBC /* GokemonChainEvo+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728C653C2BD1181F00E11CBC /* GokemonChainEvo+extensions.swift */; };
+		729F2D002BCFFB9500E4506D /* GokemonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729F2CFF2BCFFB9500E4506D /* GokemonTests.swift */; };
+		729F2D082BD02BFA00E4506D /* GokemonDetail+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729F2D072BD02BFA00E4506D /* GokemonDetail+extensions.swift */; };
+		729F2D0A2BD03B0A00E4506D /* AuthUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729F2D092BD03B0A00E4506D /* AuthUseCaseImpl.swift */; };
+		729F2D0D2BD04BB800E4506D /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729F2D0C2BD04BB800E4506D /* SplashScreenViewController.swift */; };
+		729F2D0F2BD04DC200E4506D /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729F2D0E2BD04DC200E4506D /* ErrorResponse.swift */; };
+		729F2D112BD04E3100E4506D /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729F2D102BD04E3100E4506D /* AuthViewModel.swift */; };
+		729F2D132BD04E3B00E4506D /* AuthViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729F2D122BD04E3B00E4506D /* AuthViewModelImpl.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		729F2D012BCFFB9500E4506D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 723B33562BCE5315000B8422 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 723B335D2BCE5315000B8422;
+			remoteInfo = Gokemon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		450A89FEB92922A56A2A33EA /* Pods-Gokemon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokemon.release.xcconfig"; path = "Target Support Files/Pods-Gokemon/Pods-Gokemon.release.xcconfig"; sourceTree = "<group>"; };
+		62DB915C01C058F3A0F446BD /* Pods_Gokemon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gokemon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A779346672FF38CFDE75B14 /* Pods-Gokemon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokemon.debug.xcconfig"; path = "Target Support Files/Pods-Gokemon/Pods-Gokemon.debug.xcconfig"; sourceTree = "<group>"; };
+		723B335E2BCE5315000B8422 /* Gokemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gokemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		723B33612BCE5315000B8422 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		723B33652BCE5315000B8422 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		723B33682BCE5315000B8422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		723B336A2BCE5316000B8422 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		723B336D2BCE5316000B8422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		723B336F2BCE5316000B8422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		723B337D2BCE60AE000B8422 /* UIViewController+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extensions.swift"; sourceTree = "<group>"; };
+		723B337F2BCE706C000B8422 /* GokemonUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GokemonUseCase.swift; sourceTree = "<group>"; };
+		723B33822BCE707F000B8422 /* GokemonUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GokemonUseCaseImpl.swift; sourceTree = "<group>"; };
+		723B33852BCE7205000B8422 /* GokemonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GokemonResponse.swift; sourceTree = "<group>"; };
+		723B33872BCE7210000B8422 /* GokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GokemonModel.swift; sourceTree = "<group>"; };
+		723B338A2BCE7A12000B8422 /* AuthUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUseCase.swift; sourceTree = "<group>"; };
+		723B33902BCE7B31000B8422 /* Gokemon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gokemon.xcdatamodel; sourceTree = "<group>"; };
+		723B33932BCE7D63000B8422 /* GokemonLocal+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GokemonLocal+extensions.swift"; sourceTree = "<group>"; };
+		723B33952BCE800D000B8422 /* GokemonLocalUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GokemonLocalUseCase.swift; sourceTree = "<group>"; };
+		723B33972BCE801D000B8422 /* GokemonLocalUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GokemonLocalUseCaseImpl.swift; sourceTree = "<group>"; };
+		723B33992BCE81D9000B8422 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		7258DE4D2BCF740500A61C85 /* GokemonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GokemonCollectionViewCell.swift; sourceTree = "<group>"; };
+		7258DE502BCF868100A61C85 /* GokemonDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GokemonDetailModel.swift; sourceTree = "<group>"; };
+		7258DE542BCFAC7D00A61C85 /* GokemonChainEvoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GokemonChainEvoModel.swift; sourceTree = "<group>"; };
+		7258DE562BCFACD500A61C85 /* GokemonSpeciesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GokemonSpeciesModel.swift; sourceTree = "<group>"; };
+		7258DE582BCFADFA00A61C85 /* FlavorTextEntryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavorTextEntryModel.swift; sourceTree = "<group>"; };
+		7258DE5A2BCFAE1B00A61C85 /* EvolutionChainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionChainModel.swift; sourceTree = "<group>"; };
+		7258DE5C2BCFAE3700A61C85 /* PrevEvoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrevEvoModel.swift; sourceTree = "<group>"; };
+		7258DE5E2BCFAE4900A61C85 /* FormDescriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDescriptionModel.swift; sourceTree = "<group>"; };
+		7258DE602BCFAFA300A61C85 /* ChainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainModel.swift; sourceTree = "<group>"; };
+		7258DE622BCFAFD100A61C85 /* EvolutionDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionDetailModel.swift; sourceTree = "<group>"; };
+		7258DE662BCFB1D900A61C85 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		7258DE672BCFB1D900A61C85 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		7258DE682BCFB1D900A61C85 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		7258DE692BCFB1D900A61C85 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		7258DE6A2BCFB1D900A61C85 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		7258DE6B2BCFB1D900A61C85 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		7258DE6C2BCFB1D900A61C85 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		7258DE6D2BCFB1D900A61C85 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		7258DE6E2BCFB1D900A61C85 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		7258DE6F2BCFB1D900A61C85 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		7258DE702BCFB1D900A61C85 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		7258DE712BCFB1D900A61C85 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		7258DE722BCFB1D900A61C85 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		7258DE812BCFBB8800A61C85 /* ViewNavbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewNavbar.swift; sourceTree = "<group>"; };
+		7258DE842BCFBC0F00A61C85 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7258DE872BCFBC1D00A61C85 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7258DE8A2BCFBC3800A61C85 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7258DE8D2BCFC34700A61C85 /* ListLoadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLoadViewModel.swift; sourceTree = "<group>"; };
+		7258DE8F2BCFC34F00A61C85 /* ListLoadViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLoadViewModelImpl.swift; sourceTree = "<group>"; };
+		7258DE922BCFC4EA00A61C85 /* ServiceContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceContainer.swift; sourceTree = "<group>"; };
+		7258DE932BCFC4EA00A61C85 /* DIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIConstant.swift; sourceTree = "<group>"; };
+		7258DE942BCFC4EA00A61C85 /* DIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIService.swift; sourceTree = "<group>"; };
+		726304962BD1A0400084101F /* BasicInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		726304992BD1AA840084101F /* StatInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatInfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		7263049B2BD1AC5A0084101F /* StatLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatLabel.swift; sourceTree = "<group>"; };
+		7263049E2BD212690084101F /* EvolveInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolveInfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		726304A12BD22AB40084101F /* KeteranganCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeteranganCollectionViewCell.swift; sourceTree = "<group>"; };
+		726304A62BD22DAA0084101F /* StatItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		726304A82BD236BF0084101F /* ItemEvoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemEvoModel.swift; sourceTree = "<group>"; };
+		728C65312BD0F2FC00E11CBC /* GokemonDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GokemonDetailTests.swift; sourceTree = "<group>"; };
+		728C65342BD0F4B100E11CBC /* GokemonDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GokemonDetailViewModel.swift; sourceTree = "<group>"; };
+		728C65362BD0F4B900E11CBC /* GokemonDetailViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GokemonDetailViewModelImpl.swift; sourceTree = "<group>"; };
+		728C65392BD0F9E900E11CBC /* GokemonInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GokemonInfoModel.swift; sourceTree = "<group>"; };
+		728C653C2BD1181F00E11CBC /* GokemonChainEvo+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GokemonChainEvo+extensions.swift"; sourceTree = "<group>"; };
+		729F2CFD2BCFFB9500E4506D /* GokemonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GokemonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		729F2CFF2BCFFB9500E4506D /* GokemonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GokemonTests.swift; sourceTree = "<group>"; };
+		729F2D072BD02BFA00E4506D /* GokemonDetail+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GokemonDetail+extensions.swift"; sourceTree = "<group>"; };
+		729F2D092BD03B0A00E4506D /* AuthUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUseCaseImpl.swift; sourceTree = "<group>"; };
+		729F2D0C2BD04BB800E4506D /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		729F2D0E2BD04DC200E4506D /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		729F2D102BD04E3100E4506D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		729F2D122BD04E3B00E4506D /* AuthViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModelImpl.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		723B335B2BCE5315000B8422 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72400906465831F821A7610B /* Pods_Gokemon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		729F2CFA2BCFFB9500E4506D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D5443087E095FF4CF5C7F46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A779346672FF38CFDE75B14 /* Pods-Gokemon.debug.xcconfig */,
+				450A89FEB92922A56A2A33EA /* Pods-Gokemon.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		723B33552BCE5315000B8422 = {
+			isa = PBXGroup;
+			children = (
+				723B33602BCE5315000B8422 /* Gokemon */,
+				729F2CFE2BCFFB9500E4506D /* GokemonTests */,
+				723B335F2BCE5315000B8422 /* Products */,
+				0D5443087E095FF4CF5C7F46 /* Pods */,
+				8EDAAFF60D7527078C497F0A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		723B335F2BCE5315000B8422 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				723B335E2BCE5315000B8422 /* Gokemon.app */,
+				729F2CFD2BCFFB9500E4506D /* GokemonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		723B33602BCE5315000B8422 /* Gokemon */ = {
+			isa = PBXGroup;
+			children = (
+				7258DE4B2BCF73E200A61C85 /* CustomUI */,
+				723B337C2BCE6097000B8422 /* Utils */,
+				723B33782BCE5805000B8422 /* UseCase */,
+				723B33772BCE57FC000B8422 /* ViewController */,
+				723B33762BCE57F3000B8422 /* ViewModel */,
+				723B33752BCE57EE000B8422 /* Model */,
+				723B33612BCE5315000B8422 /* AppDelegate.swift */,
+				723B33652BCE5315000B8422 /* ViewController.swift */,
+				723B33672BCE5315000B8422 /* Main.storyboard */,
+				723B336A2BCE5316000B8422 /* Assets.xcassets */,
+				723B336C2BCE5316000B8422 /* LaunchScreen.storyboard */,
+				723B336F2BCE5316000B8422 /* Info.plist */,
+			);
+			path = Gokemon;
+			sourceTree = "<group>";
+		};
+		723B33752BCE57EE000B8422 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				728C65382BD0F9D100E11CBC /* GokemonInfoModel */,
+				7258DE532BCFA98100A61C85 /* GokemonSpecies */,
+				7258DE522BCFA94400A61C85 /* GokemonChainEvo */,
+				7258DE4F2BCF866D00A61C85 /* GokemonDetail */,
+				723B33842BCE71E5000B8422 /* Gokemon */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		723B33762BCE57F3000B8422 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				728C65332BD0F49400E11CBC /* GokemonDetailViewModel */,
+				7258DE8C2BCFC31A00A61C85 /* ListLoadViewModel */,
+				723B33792BCE5A04000B8422 /* AuthViewModel */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		723B33772BCE57FC000B8422 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				729F2D0B2BD04B8800E4506D /* SplashScreenVC */,
+				7258DE892BCFBC2200A61C85 /* DetailVC */,
+				7258DE862BCFBC1200A61C85 /* HomeVC */,
+				7258DE832BCFBBF800A61C85 /* LoginVC */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		723B33782BCE5805000B8422 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				723B338C2BCE7A1D000B8422 /* GokemonLocalUseCase */,
+				723B33892BCE7A01000B8422 /* AuthUseCase */,
+				723B33812BCE7074000B8422 /* GokemonUseCase */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		723B33792BCE5A04000B8422 /* AuthViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				729F2D102BD04E3100E4506D /* AuthViewModel.swift */,
+				729F2D122BD04E3B00E4506D /* AuthViewModelImpl.swift */,
+			);
+			path = AuthViewModel;
+			sourceTree = "<group>";
+		};
+		723B337C2BCE6097000B8422 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7258DE912BCFC4EA00A61C85 /* DependencyInjection */,
+				723B338D2BCE7A2B000B8422 /* Local */,
+				723B337D2BCE60AE000B8422 /* UIViewController+extensions.swift */,
+				729F2D0E2BD04DC200E4506D /* ErrorResponse.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		723B33812BCE7074000B8422 /* GokemonUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				723B337F2BCE706C000B8422 /* GokemonUseCase.swift */,
+				723B33822BCE707F000B8422 /* GokemonUseCaseImpl.swift */,
+			);
+			path = GokemonUseCase;
+			sourceTree = "<group>";
+		};
+		723B33842BCE71E5000B8422 /* Gokemon */ = {
+			isa = PBXGroup;
+			children = (
+				723B33852BCE7205000B8422 /* GokemonResponse.swift */,
+				723B33872BCE7210000B8422 /* GokemonModel.swift */,
+			);
+			path = Gokemon;
+			sourceTree = "<group>";
+		};
+		723B33892BCE7A01000B8422 /* AuthUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				723B338A2BCE7A12000B8422 /* AuthUseCase.swift */,
+				729F2D092BD03B0A00E4506D /* AuthUseCaseImpl.swift */,
+			);
+			path = AuthUseCase;
+			sourceTree = "<group>";
+		};
+		723B338C2BCE7A1D000B8422 /* GokemonLocalUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				723B33952BCE800D000B8422 /* GokemonLocalUseCase.swift */,
+				723B33972BCE801D000B8422 /* GokemonLocalUseCaseImpl.swift */,
+			);
+			path = GokemonLocalUseCase;
+			sourceTree = "<group>";
+		};
+		723B338D2BCE7A2B000B8422 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				723B338E2BCE7B00000B8422 /* CoreData */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		723B338E2BCE7B00000B8422 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				728C653B2BD117E800E11CBC /* GokemonChainEvo */,
+				729F2D062BD02BE200E4506D /* GokemonDetail */,
+				723B33922BCE7D51000B8422 /* GokemonLocal */,
+				723B338F2BCE7B31000B8422 /* Gokemon.xcdatamodeld */,
+				723B33992BCE81D9000B8422 /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		723B33922BCE7D51000B8422 /* GokemonLocal */ = {
+			isa = PBXGroup;
+			children = (
+				723B33932BCE7D63000B8422 /* GokemonLocal+extensions.swift */,
+			);
+			path = GokemonLocal;
+			sourceTree = "<group>";
+		};
+		7258DE4B2BCF73E200A61C85 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				726304952BD1A00C0084101F /* CollectionViewCell */,
+				7258DE802BCFBB7D00A61C85 /* NavBar */,
+				7258DE642BCFB1AF00A61C85 /* Font */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		7258DE4C2BCF73EE00A61C85 /* GokemonColectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7258DE4D2BCF740500A61C85 /* GokemonCollectionViewCell.swift */,
+			);
+			path = GokemonColectionViewCell;
+			sourceTree = "<group>";
+		};
+		7258DE4F2BCF866D00A61C85 /* GokemonDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7258DE502BCF868100A61C85 /* GokemonDetailModel.swift */,
+			);
+			path = GokemonDetail;
+			sourceTree = "<group>";
+		};
+		7258DE522BCFA94400A61C85 /* GokemonChainEvo */ = {
+			isa = PBXGroup;
+			children = (
+				7258DE542BCFAC7D00A61C85 /* GokemonChainEvoModel.swift */,
+				7258DE602BCFAFA300A61C85 /* ChainModel.swift */,
+				7258DE622BCFAFD100A61C85 /* EvolutionDetailModel.swift */,
+				726304A82BD236BF0084101F /* ItemEvoModel.swift */,
+			);
+			path = GokemonChainEvo;
+			sourceTree = "<group>";
+		};
+		7258DE532BCFA98100A61C85 /* GokemonSpecies */ = {
+			isa = PBXGroup;
+			children = (
+				7258DE562BCFACD500A61C85 /* GokemonSpeciesModel.swift */,
+				7258DE582BCFADFA00A61C85 /* FlavorTextEntryModel.swift */,
+				7258DE5A2BCFAE1B00A61C85 /* EvolutionChainModel.swift */,
+				7258DE5C2BCFAE3700A61C85 /* PrevEvoModel.swift */,
+				7258DE5E2BCFAE4900A61C85 /* FormDescriptionModel.swift */,
+			);
+			path = GokemonSpecies;
+			sourceTree = "<group>";
+		};
+		7258DE642BCFB1AF00A61C85 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				7258DE652BCFB1D900A61C85 /* Roboto */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		7258DE652BCFB1D900A61C85 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				7258DE662BCFB1D900A61C85 /* Roboto-Medium.ttf */,
+				7258DE672BCFB1D900A61C85 /* Roboto-Light.ttf */,
+				7258DE682BCFB1D900A61C85 /* Roboto-Regular.ttf */,
+				7258DE692BCFB1D900A61C85 /* Roboto-MediumItalic.ttf */,
+				7258DE6A2BCFB1D900A61C85 /* Roboto-ThinItalic.ttf */,
+				7258DE6B2BCFB1D900A61C85 /* Roboto-BoldItalic.ttf */,
+				7258DE6C2BCFB1D900A61C85 /* Roboto-LightItalic.ttf */,
+				7258DE6D2BCFB1D900A61C85 /* Roboto-Italic.ttf */,
+				7258DE6E2BCFB1D900A61C85 /* LICENSE.txt */,
+				7258DE6F2BCFB1D900A61C85 /* Roboto-BlackItalic.ttf */,
+				7258DE702BCFB1D900A61C85 /* Roboto-Bold.ttf */,
+				7258DE712BCFB1D900A61C85 /* Roboto-Thin.ttf */,
+				7258DE722BCFB1D900A61C85 /* Roboto-Black.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		7258DE802BCFBB7D00A61C85 /* NavBar */ = {
+			isa = PBXGroup;
+			children = (
+				7258DE812BCFBB8800A61C85 /* ViewNavbar.swift */,
+			);
+			path = NavBar;
+			sourceTree = "<group>";
+		};
+		7258DE832BCFBBF800A61C85 /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				7258DE842BCFBC0F00A61C85 /* LoginViewController.swift */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		7258DE862BCFBC1200A61C85 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				7258DE872BCFBC1D00A61C85 /* HomeViewController.swift */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		7258DE892BCFBC2200A61C85 /* DetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				7258DE8A2BCFBC3800A61C85 /* DetailViewController.swift */,
+			);
+			path = DetailVC;
+			sourceTree = "<group>";
+		};
+		7258DE8C2BCFC31A00A61C85 /* ListLoadViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7258DE8D2BCFC34700A61C85 /* ListLoadViewModel.swift */,
+				7258DE8F2BCFC34F00A61C85 /* ListLoadViewModelImpl.swift */,
+			);
+			path = ListLoadViewModel;
+			sourceTree = "<group>";
+		};
+		7258DE912BCFC4EA00A61C85 /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				7258DE922BCFC4EA00A61C85 /* ServiceContainer.swift */,
+				7258DE932BCFC4EA00A61C85 /* DIConstant.swift */,
+				7258DE942BCFC4EA00A61C85 /* DIService.swift */,
+			);
+			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
+		726304932BD19FE00084101F /* BasicInfoCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				726304962BD1A0400084101F /* BasicInfoCollectionViewCell.swift */,
+			);
+			path = BasicInfoCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		726304942BD1A0000084101F /* DetailGokemon */ = {
+			isa = PBXGroup;
+			children = (
+				726304A52BD22D9B0084101F /* StatItemCollectionViewCell */,
+				7263049D2BD212410084101F /* EvolveInfoCollectionViewCell */,
+				726304982BD1A8170084101F /* StatsInfoCollectionViewCell */,
+				726304932BD19FE00084101F /* BasicInfoCollectionViewCell */,
+			);
+			path = DetailGokemon;
+			sourceTree = "<group>";
+		};
+		726304952BD1A00C0084101F /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				726304A02BD22AA10084101F /* KeteranganCollectionViewCell */,
+				7258DE4C2BCF73EE00A61C85 /* GokemonColectionViewCell */,
+				726304942BD1A0000084101F /* DetailGokemon */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		726304982BD1A8170084101F /* StatsInfoCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				726304992BD1AA840084101F /* StatInfoCollectionViewCell.swift */,
+			);
+			path = StatsInfoCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		7263049D2BD212410084101F /* EvolveInfoCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7263049E2BD212690084101F /* EvolveInfoCollectionViewCell.swift */,
+			);
+			path = EvolveInfoCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		726304A02BD22AA10084101F /* KeteranganCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				726304A12BD22AB40084101F /* KeteranganCollectionViewCell.swift */,
+			);
+			path = KeteranganCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		726304A52BD22D9B0084101F /* StatItemCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				726304A62BD22DAA0084101F /* StatItemCollectionViewCell.swift */,
+				7263049B2BD1AC5A0084101F /* StatLabel.swift */,
+			);
+			path = StatItemCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		728C65332BD0F49400E11CBC /* GokemonDetailViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				728C65342BD0F4B100E11CBC /* GokemonDetailViewModel.swift */,
+				728C65362BD0F4B900E11CBC /* GokemonDetailViewModelImpl.swift */,
+			);
+			path = GokemonDetailViewModel;
+			sourceTree = "<group>";
+		};
+		728C65382BD0F9D100E11CBC /* GokemonInfoModel */ = {
+			isa = PBXGroup;
+			children = (
+				728C65392BD0F9E900E11CBC /* GokemonInfoModel.swift */,
+			);
+			path = GokemonInfoModel;
+			sourceTree = "<group>";
+		};
+		728C653B2BD117E800E11CBC /* GokemonChainEvo */ = {
+			isa = PBXGroup;
+			children = (
+				728C653C2BD1181F00E11CBC /* GokemonChainEvo+extensions.swift */,
+			);
+			path = GokemonChainEvo;
+			sourceTree = "<group>";
+		};
+		729F2CFE2BCFFB9500E4506D /* GokemonTests */ = {
+			isa = PBXGroup;
+			children = (
+				729F2CFF2BCFFB9500E4506D /* GokemonTests.swift */,
+				728C65312BD0F2FC00E11CBC /* GokemonDetailTests.swift */,
+			);
+			path = GokemonTests;
+			sourceTree = "<group>";
+		};
+		729F2D062BD02BE200E4506D /* GokemonDetail */ = {
+			isa = PBXGroup;
+			children = (
+				729F2D072BD02BFA00E4506D /* GokemonDetail+extensions.swift */,
+			);
+			path = GokemonDetail;
+			sourceTree = "<group>";
+		};
+		729F2D0B2BD04B8800E4506D /* SplashScreenVC */ = {
+			isa = PBXGroup;
+			children = (
+				729F2D0C2BD04BB800E4506D /* SplashScreenViewController.swift */,
+			);
+			path = SplashScreenVC;
+			sourceTree = "<group>";
+		};
+		8EDAAFF60D7527078C497F0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62DB915C01C058F3A0F446BD /* Pods_Gokemon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		723B335D2BCE5315000B8422 /* Gokemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 723B33722BCE5316000B8422 /* Build configuration list for PBXNativeTarget "Gokemon" */;
+			buildPhases = (
+				8D89432EDBD7C03EAEB11AA2 /* [CP] Check Pods Manifest.lock */,
+				723B335A2BCE5315000B8422 /* Sources */,
+				723B335B2BCE5315000B8422 /* Frameworks */,
+				723B335C2BCE5315000B8422 /* Resources */,
+				5D0D6A32A72957F5E7046F0C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gokemon;
+			productName = Gokemon;
+			productReference = 723B335E2BCE5315000B8422 /* Gokemon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		729F2CFC2BCFFB9500E4506D /* GokemonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 729F2D052BCFFB9500E4506D /* Build configuration list for PBXNativeTarget "GokemonTests" */;
+			buildPhases = (
+				729F2CF92BCFFB9500E4506D /* Sources */,
+				729F2CFA2BCFFB9500E4506D /* Frameworks */,
+				729F2CFB2BCFFB9500E4506D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				729F2D022BCFFB9500E4506D /* PBXTargetDependency */,
+			);
+			name = GokemonTests;
+			productName = GokemonTests;
+			productReference = 729F2CFD2BCFFB9500E4506D /* GokemonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		723B33562BCE5315000B8422 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					723B335D2BCE5315000B8422 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					729F2CFC2BCFFB9500E4506D = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 723B335D2BCE5315000B8422;
+					};
+				};
+			};
+			buildConfigurationList = 723B33592BCE5315000B8422 /* Build configuration list for PBXProject "Gokemon" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 723B33552BCE5315000B8422;
+			productRefGroup = 723B335F2BCE5315000B8422 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				723B335D2BCE5315000B8422 /* Gokemon */,
+				729F2CFC2BCFFB9500E4506D /* GokemonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		723B335C2BCE5315000B8422 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7258DE7D2BCFB1D900A61C85 /* Roboto-Bold.ttf in Resources */,
+				7258DE7B2BCFB1D900A61C85 /* LICENSE.txt in Resources */,
+				7258DE782BCFB1D900A61C85 /* Roboto-BoldItalic.ttf in Resources */,
+				7258DE752BCFB1D900A61C85 /* Roboto-Regular.ttf in Resources */,
+				7258DE792BCFB1D900A61C85 /* Roboto-LightItalic.ttf in Resources */,
+				7258DE732BCFB1D900A61C85 /* Roboto-Medium.ttf in Resources */,
+				723B336E2BCE5316000B8422 /* LaunchScreen.storyboard in Resources */,
+				7258DE7C2BCFB1D900A61C85 /* Roboto-BlackItalic.ttf in Resources */,
+				7258DE7E2BCFB1D900A61C85 /* Roboto-Thin.ttf in Resources */,
+				7258DE742BCFB1D900A61C85 /* Roboto-Light.ttf in Resources */,
+				7258DE772BCFB1D900A61C85 /* Roboto-ThinItalic.ttf in Resources */,
+				7258DE7F2BCFB1D900A61C85 /* Roboto-Black.ttf in Resources */,
+				7258DE762BCFB1D900A61C85 /* Roboto-MediumItalic.ttf in Resources */,
+				723B336B2BCE5316000B8422 /* Assets.xcassets in Resources */,
+				7258DE7A2BCFB1D900A61C85 /* Roboto-Italic.ttf in Resources */,
+				723B33692BCE5315000B8422 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		729F2CFB2BCFFB9500E4506D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D0D6A32A72957F5E7046F0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gokemon/Pods-Gokemon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gokemon/Pods-Gokemon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gokemon/Pods-Gokemon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D89432EDBD7C03EAEB11AA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gokemon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		723B335A2BCE5315000B8422 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				723B33912BCE7B31000B8422 /* Gokemon.xcdatamodeld in Sources */,
+				723B33802BCE706C000B8422 /* GokemonUseCase.swift in Sources */,
+				723B33982BCE801D000B8422 /* GokemonLocalUseCaseImpl.swift in Sources */,
+				7258DE612BCFAFA300A61C85 /* ChainModel.swift in Sources */,
+				7258DE962BCFC4EA00A61C85 /* DIConstant.swift in Sources */,
+				7258DE5F2BCFAE4900A61C85 /* FormDescriptionModel.swift in Sources */,
+				729F2D132BD04E3B00E4506D /* AuthViewModelImpl.swift in Sources */,
+				7258DE552BCFAC7D00A61C85 /* GokemonChainEvoModel.swift in Sources */,
+				723B33832BCE707F000B8422 /* GokemonUseCaseImpl.swift in Sources */,
+				7258DE972BCFC4EA00A61C85 /* DIService.swift in Sources */,
+				7258DE592BCFADFA00A61C85 /* FlavorTextEntryModel.swift in Sources */,
+				723B33662BCE5315000B8422 /* ViewController.swift in Sources */,
+				728C65352BD0F4B100E11CBC /* GokemonDetailViewModel.swift in Sources */,
+				7263049C2BD1AC5A0084101F /* StatLabel.swift in Sources */,
+				7258DE952BCFC4EA00A61C85 /* ServiceContainer.swift in Sources */,
+				726304A22BD22AB40084101F /* KeteranganCollectionViewCell.swift in Sources */,
+				7258DE8B2BCFBC3800A61C85 /* DetailViewController.swift in Sources */,
+				723B337E2BCE60AE000B8422 /* UIViewController+extensions.swift in Sources */,
+				7263049F2BD212690084101F /* EvolveInfoCollectionViewCell.swift in Sources */,
+				728C65372BD0F4B900E11CBC /* GokemonDetailViewModelImpl.swift in Sources */,
+				7258DE512BCF868100A61C85 /* GokemonDetailModel.swift in Sources */,
+				729F2D0F2BD04DC200E4506D /* ErrorResponse.swift in Sources */,
+				729F2D0A2BD03B0A00E4506D /* AuthUseCaseImpl.swift in Sources */,
+				726304A92BD236BF0084101F /* ItemEvoModel.swift in Sources */,
+				7258DE882BCFBC1D00A61C85 /* HomeViewController.swift in Sources */,
+				7258DE5D2BCFAE3700A61C85 /* PrevEvoModel.swift in Sources */,
+				723B339A2BCE81D9000B8422 /* CoreDataStack.swift in Sources */,
+				7258DE852BCFBC0F00A61C85 /* LoginViewController.swift in Sources */,
+				7258DE5B2BCFAE1B00A61C85 /* EvolutionChainModel.swift in Sources */,
+				726304972BD1A0400084101F /* BasicInfoCollectionViewCell.swift in Sources */,
+				729F2D082BD02BFA00E4506D /* GokemonDetail+extensions.swift in Sources */,
+				7258DE4E2BCF740500A61C85 /* GokemonCollectionViewCell.swift in Sources */,
+				7263049A2BD1AA840084101F /* StatInfoCollectionViewCell.swift in Sources */,
+				729F2D0D2BD04BB800E4506D /* SplashScreenViewController.swift in Sources */,
+				7258DE902BCFC34F00A61C85 /* ListLoadViewModelImpl.swift in Sources */,
+				723B33942BCE7D63000B8422 /* GokemonLocal+extensions.swift in Sources */,
+				7258DE822BCFBB8800A61C85 /* ViewNavbar.swift in Sources */,
+				723B33882BCE7210000B8422 /* GokemonModel.swift in Sources */,
+				728C653A2BD0F9E900E11CBC /* GokemonInfoModel.swift in Sources */,
+				723B33622BCE5315000B8422 /* AppDelegate.swift in Sources */,
+				723B33962BCE800D000B8422 /* GokemonLocalUseCase.swift in Sources */,
+				723B33862BCE7205000B8422 /* GokemonResponse.swift in Sources */,
+				728C653D2BD1181F00E11CBC /* GokemonChainEvo+extensions.swift in Sources */,
+				726304A72BD22DAA0084101F /* StatItemCollectionViewCell.swift in Sources */,
+				7258DE632BCFAFD100A61C85 /* EvolutionDetailModel.swift in Sources */,
+				723B338B2BCE7A12000B8422 /* AuthUseCase.swift in Sources */,
+				7258DE8E2BCFC34700A61C85 /* ListLoadViewModel.swift in Sources */,
+				7258DE572BCFACD500A61C85 /* GokemonSpeciesModel.swift in Sources */,
+				729F2D112BD04E3100E4506D /* AuthViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		729F2CF92BCFFB9500E4506D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				729F2D002BCFFB9500E4506D /* GokemonTests.swift in Sources */,
+				728C65322BD0F2FC00E11CBC /* GokemonDetailTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		729F2D022BCFFB9500E4506D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 723B335D2BCE5315000B8422 /* Gokemon */;
+			targetProxy = 729F2D012BCFFB9500E4506D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		723B33672BCE5315000B8422 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				723B33682BCE5315000B8422 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		723B336C2BCE5316000B8422 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				723B336D2BCE5316000B8422 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		723B33702BCE5316000B8422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		723B33712BCE5316000B8422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		723B33732BCE5316000B8422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A779346672FF38CFDE75B14 /* Pods-Gokemon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9Y26B6GZB;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Gokemon/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jan.Gokemon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		723B33742BCE5316000B8422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 450A89FEB92922A56A2A33EA /* Pods-Gokemon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9Y26B6GZB;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Gokemon/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jan.Gokemon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		729F2D032BCFFB9500E4506D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9Y26B6GZB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jan.GokemonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gokemon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gokemon";
+			};
+			name = Debug;
+		};
+		729F2D042BCFFB9500E4506D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9Y26B6GZB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jan.GokemonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gokemon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gokemon";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		723B33592BCE5315000B8422 /* Build configuration list for PBXProject "Gokemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				723B33702BCE5316000B8422 /* Debug */,
+				723B33712BCE5316000B8422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		723B33722BCE5316000B8422 /* Build configuration list for PBXNativeTarget "Gokemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				723B33732BCE5316000B8422 /* Debug */,
+				723B33742BCE5316000B8422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		729F2D052BCFFB9500E4506D /* Build configuration list for PBXNativeTarget "GokemonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				729F2D032BCFFB9500E4506D /* Debug */,
+				729F2D042BCFFB9500E4506D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		723B338F2BCE7B31000B8422 /* Gokemon.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				723B33902BCE7B31000B8422 /* Gokemon.xcdatamodel */,
+			);
+			currentVersion = 723B33902BCE7B31000B8422 /* Gokemon.xcdatamodel */;
+			path = Gokemon.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 723B33562BCE5315000B8422 /* Project object */;
+}

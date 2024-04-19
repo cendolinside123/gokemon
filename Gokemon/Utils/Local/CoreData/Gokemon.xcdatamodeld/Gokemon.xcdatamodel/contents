@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22225" systemVersion="23B92" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="GokemonChainEvo" representedClassName="GokemonChainEvo" syncable="YES" codeGenerationType="class">
+        <attribute name="chain" optional="YES" attributeType="Binary"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="gokemon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GokemonLocal"/>
+    </entity>
+    <entity name="GokemonDetail" representedClassName="GokemonDetail" syncable="YES" codeGenerationType="class">
+        <attribute name="abilities" optional="YES" attributeType="Binary"/>
+        <attribute name="baseExperience" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cries" optional="YES" attributeType="Binary"/>
+        <attribute name="height" optional="YES" attributeType="Decimal" defaultValueString="0"/>
+        <attribute name="heldItems" optional="YES" attributeType="Binary"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="locationAreaEncounters" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="order" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="pastTypes" optional="YES" attributeType="Binary"/>
+        <attribute name="species" optional="YES" attributeType="Binary"/>
+        <attribute name="sprites" optional="YES" attributeType="Binary"/>
+        <attribute name="stats" optional="YES" attributeType="Binary"/>
+        <attribute name="types" optional="YES" attributeType="Binary"/>
+        <attribute name="weight" optional="YES" attributeType="Decimal" defaultValueString="0"/>
+        <relationship name="gokemon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GokemonLocal" inverseName="detail" inverseEntity="GokemonLocal"/>
+    </entity>
+    <entity name="GokemonLocal" representedClassName="GokemonLocal" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="chainEvo" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="GokemonChainEvo"/>
+        <relationship name="detail" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="GokemonDetail" inverseName="gokemon" inverseEntity="GokemonDetail"/>
+    </entity>
+</model>
